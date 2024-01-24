@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repo Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-df4QYJoWgxMZB7ld16OKjCFg3FY5WKYY1AAIi9oT6jzI0s4s/5g2e7Ud8ePdUme" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="outest">
+        <div class="part1">
+            <div class="details">user details</div>
+            <div class="filtering">
+                <div class="nme">
+                    <input type="text" id="txt" placeholder="Enter GitHub username"/>
+                    <button id="btn">Search</button>
+                </div>
+              
+                <div class="num">
+                    <label for="reposPerPage">Repos per page:</label>
+                    <select id="reposPerPage"></select>
+                </div>
+            </div>
+       </div>
+        <div id="repoDiv" class="repo-grid"></div>
+        <div class="pagination" id="pagination"></div>
+        
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

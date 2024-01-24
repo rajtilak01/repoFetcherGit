@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up a basic font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4781c4;
+    
+background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+
+}
+
+/* Style the outer container */
+.outest {
+    max-width: 850px;
+    margin: 20px auto;
+    /* white-space: nowrap; */
+    padding: 20px;
+    /* background-color: #278d94; */
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the user details and filtering section */
+.part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filtering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nme {
+    margin-bottom: 10px;
+}
+
+#txt {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+#btn {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.num {
+    margin-top: 10px;
+}
+
+/* Style the repository grid */
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Style the pagination section */
+.pagination {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Apply some basic styles to form elements */
+select, input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the page numbers in the pagination section */
+.pagination a {
+    padding: 5px 10px;
+    margin: 0 2px;
+    text-decoration: none;
+    color: #3498db;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .outest {
+        padding: 10px;
+    }
+
+    .part1 {
+        text-align: center;
+    }
+}
